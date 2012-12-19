@@ -252,7 +252,7 @@ display:block;
 }
 .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(3){
-	background-image: url(graphics/doorRC.jpg);
+	background-image: url(graphics/DoorRC.jpg);
 }
 .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(4){

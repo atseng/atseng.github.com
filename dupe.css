@@ -341,11 +341,6 @@ p{
       100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
   }
 
-#Touch{
-  height: 690px;
-}
-
-
 .authors{
     height: 720px;
     width: 100%;

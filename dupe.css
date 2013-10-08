@@ -72,7 +72,7 @@ display:block;
 	padding-bottom:135px;
 	}
 
-#nav a{
+nav a{
     font-family:'PT Sans Narrow', sans-serif;
     font-weight: normal;
     font-size: 13px;
@@ -348,22 +348,6 @@ p{
     overflow: hidden;
 }
 
-/*.bottom-logo{
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.5%;
-  background-image: url('graphics/new_logo.png');
-  background-repeat: no-repeat;
-  max-width:940px;
-  height:240px;
-}*/
-
-/*.bio{
-    background-color: rgba(255,255,255,0.5);
-}
-*/
 .bio-wrap{
   position: relative;
   width: 960px;
@@ -445,57 +429,14 @@ p{
 
 /*footer*/
 
-.footer{
+footer{
 	position:absolute;
 	width:100%;
 	height:140px;
 	bottom:0;
 	background: transparent url("graphics/footerRC.jpg") no-repeat;
 	background-size: cover;
-	}
-
-.footer-column{
-	float: left;
-	width:455px;
-	padding:50px 0 0 0;
-	margin-left:0px;
-	margin-right:0px;
-	}
-
-  .footer-column h2{
-  	font-family:'PT Sans Narrow', sans-serif;
-  	font-weight: bold;
-  	text-align: center;
-  	font-size: 12px;
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	color:white;
-  	}
-
-.footer-creator{
-	float:right;
-	width:455px;
-	padding: 50px 0;
-	margin-left:0px;
-	margin-right:0px;
-	}
-
-  .footer-creator h2{
-  	font-family:'PT Sans Narrow', sans-serif;
-  	font-weight: bold;
-  	text-align:center;
-  	font-size: 12px;
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	margin-bottom:6px;
-  	color:white;
-  	}
-
-  .footer a{
-  	text-decoration:none;
-  	margin-left:185px;
-  	color:white;
-  	}
+}
 
 .copy-right {
 	margin-left:47%;

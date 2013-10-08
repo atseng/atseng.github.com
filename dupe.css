@@ -122,10 +122,10 @@ nav a{
 	margin-left: auto;
   margin-right: auto;
 	margin-top: 4.5%;
-	background-image: url('graphics/new_logo.png');
+	background-image: url('graphics/logo.png');
 	background-repeat: no-repeat;
   background-size: cover;
-	max-width:945px;
+	max-width:445px;
 	height:240px;
 }
 

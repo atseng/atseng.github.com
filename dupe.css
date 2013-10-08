@@ -55,13 +55,13 @@ div{
 	}
 
 img{
-border-style:none;
-text-decoration:none;
+  border-style:none;
+  text-decoration:none;
 }
 
 a: hover img {
-border:0 !important;
-display:block;
+  border:0 !important;
+  display:block;
 }
 
 .top_wrapper{
@@ -72,39 +72,49 @@ display:block;
 	padding-bottom:135px;
 	}
 
+nav{
+  width: 100%;
+}
+
 nav a{
-    font-family:'PT Sans Narrow', sans-serif;
-    font-weight: normal;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-decoration:none;
-    text-transform: uppercase;
-    margin: 5px 16px 0;
-    color: black;
-    -webkite-transition:all 0.5s ease;
-    }
+  font-family:'PT Sans Narrow', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-decoration:none;
+  text-transform: uppercase;
+  margin: 5px 16px 0;
+  color: black;
+  -webkite-transition:all 0.5s ease;
+}
 
 #sticky_navigation {
-    position: fixed;
-    font-family: 'PT Sans Narrow', sans-serif;
-    text-align: right;
-    width: 100%;
-    padding: 18px 0;
-    margin-top:-5px;
-    margin-bottom:0px;
-    background:white;
-    z-index:5000;
+  position: fixed;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: right;
+  width: 100%;
+  padding: 18px 0;
+  margin-top:-5px;
+  margin-bottom:0px;
+  background:white;
+  z-index:5000;
 }
 
 .content {
-    background-image: url('graphics/artactportrait.jpg');
-    background-size: cover;
-    overflow: hidden;
-    height: 728px;
-    padding: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    }
+  background-image: url('graphics/artactportrait-centered.jpg');
+  background-size: cover;
+  overflow: hidden;
+  height: 728px;
+  padding: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center{
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
 
 .my-logo{
   position: relative;
@@ -114,35 +124,48 @@ nav a{
 	margin-top: 4.5%;
 	background-image: url('graphics/new_logo.png');
 	background-repeat: no-repeat;
+  background-size: cover;
 	max-width:945px;
 	height:240px;
-	}
-
-.artact{
-    position: relative;
-    padding: 1.5em;
-    right: 2.5px;
-    bottom: 85px;
-    width: 245px;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 5;
 }
 
-  .artact h2{
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    letter-spacing: .5px;
-    font-weight: 220;
+.artact{
+  position: relative;
+  padding: 1.5em;
+  left: 2px;
+  bottom: 85px;
+  width: 255px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+}
+
+.artact h2{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  letter-spacing: .5px;
+  font-weight: 220;
   }
+
+.keyboard{
+  position: absolute;
+  background: url("images/keyboard.png") no-repeat;
+  background-size: cover;
+  height: 88px;
+  width: 88px;
+  right: 1.5%;
+  top: 80%;
+  overflow: hidden;
+  z-index:4;
+}
 
 
 .banner{
-    width: 100%;
-    height: 125px;
-    overflow: hidden;
-    background: url("graphics/banner.jpg");
+  width: 100%;
+  height: 125px;
+  overflow: hidden;
+  background: url("graphics/banner.jpg");
 }
 
 .night{
@@ -167,24 +190,24 @@ p{
 }
 
 .canvas{
-    overflow: hidden;
-    height: 1050px;
-    width: 100%;
-    padding: 0px;
-    background-image: url('graphics/canvas.jpg');
+  overflow: hidden;
+  height: 1050px;
+  width: 100%;
+  padding: 0px;
+  background-image: url('graphics/canvas.jpg');
 }
 
 .eds{
-    position: relative;
-	  height: 490px;
-    width: 420px;
-    margin-right: auto;
-    margin-left: auto;
+  position: relative;
+  height: 490px;
+  width: 420px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .promo{
-    position: relative;
-    margin-top: 55px;
+  position: relative;
+  margin-top: 55px;
 }
 
   .promo li{
@@ -219,64 +242,64 @@ p{
 }
 
 .eds li:hover div {
-    height:40px;
+  height:40px;
 }
 
 .main{
-    position: relative;
-    width: 960px;
-    margin-top: 2em;
-    margin-right: auto;
-    margin-left: auto;
+  position: relative;
+  width: 960px;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .article{
-    position: relative;
-    margin-top: 1em;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 100%;
-    text-align: justify;
-    line-height: 1.5em;
-    font-weight: 150;
+  position: relative;
+  margin-top: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+  text-align: justify;
+  line-height: 1.5em;
+  font-weight: 150;
 }
 
 .opener{
-    position: relative;
-    margin-top: 3em;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 100%;
-    text-align: justify;
-    line-height: 1.5em;
-    font-weight: 200;
+  position: relative;
+  margin-top: 3em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+  text-align: justify;
+  line-height: 1.5em;
+  font-weight: 200;
 }
 
 .ads{
-    clear:both;
-    width:100%;
-    height: 840px;
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
-    background: url("graphics/front_cover.jpg") no-repeat;
-    background-size: cover;
-    }
+  clear:both;
+  width:100%;
+  height: 840px;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  background: url("graphics/front_cover.jpg") no-repeat;
+  background-size: cover;
+}
 
 .sf-header{
-    width: 688px;
-    height: 160px;
-    margin-top: -100px;
-    margin-left: -344px;
-    background: url("graphics/salvaged_future_header_shadow.png") no-repeat;
-    z-index: 3;
+  width: 688px;
+  height: 160px;
+  margin-top: -100px;
+  margin-left: -344px;
+  background: url("graphics/salvaged_future_header_shadow.png") no-repeat;
+  z-index: 3;
 }
 
 .installation{
-    position: relative;
-    width: 230px;
-    height: 48px;
-    margin-top: -30px;
-    margin-left: -113px;
-    z-index: 3;
+  position: relative;
+  width: 230px;
+  height: 48px;
+  margin-top: -30px;
+  margin-left: -113px;
+  z-index: 3;
 }
 
   .installation a {
@@ -296,21 +319,15 @@ p{
       border-radius:5px;
   }
 
-.center{
-    position: relative;
-    top: 50%;
-    left: 50%;
-}
-
 #grid{
-    max-width: 69em;
-    height: 100%;
+  max-width: 69em;
+  height: 100%;
 }
 
 .grid.effect-4 {
-    -webkit-perspective: 1300px;
-    -moz-perspective: 1300px;
-    perspective: 1300px;
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
 }
 
   .grid.effect-4 li {
@@ -342,10 +359,10 @@ p{
   }
 
 .authors{
-    height: 720px;
-    width: 100%;
-    background-image: url('graphics/canvas.jpg');
-    overflow: hidden;
+  height: 720px;
+  width: 100%;
+  background-image: url('graphics/canvas.jpg');
+  overflow: hidden;
 }
 
 .bio-wrap{
@@ -365,20 +382,20 @@ p{
   border-top: thin double rgb(224, 224, 224);
 }
 
-.biography h3{
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-family: "Ubuntu", "Helvetica", sans-serif;
-  padding-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
+  .biography h3{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "Ubuntu", "Helvetica", sans-serif;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-.biography p{
-  padding: 2px 7px 10px 8px;
-  font-family: "Ubuntu", "Helvetica", sans-serif;
-  text-align: justify;
-}
+  .biography p{
+    padding: 2px 7px 10px 8px;
+    font-family: "Ubuntu", "Helvetica", sans-serif;
+    text-align: justify;
+  }
 
 .dylan{
   float: left;
@@ -386,14 +403,14 @@ p{
   height: 400px;
 }
 
-.dylan span{
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  left: 122.5px;
-  background: url("graphics/lazerow.png") no-repeat;
-  background-size: cover;
-}
+  .dylan span{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 122.5px;
+    background: url("graphics/lazerow.png") no-repeat;
+    background-size: cover;
+  }
 
 .allen{
   float: right;
@@ -401,14 +418,14 @@ p{
   height: 400px;
 }
 
-.allen span{
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  right: 122.5px;
-  background: url("graphics/tseng.png") no-repeat;
-  background-size: cover;
-}
+  .allen span{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: 122.5px;
+    background: url("graphics/tseng.png") no-repeat;
+    background-size: cover;
+  }
 
 .email{
   width: 113px;
@@ -417,15 +434,15 @@ p{
   margin-right: auto;
 }
 
-.email span{
-  position: absolute;
-  width: 113px;
-  height: 113px;
-  margin-top: 26px;
-  background: url("graphics/aa-mail-icon.png") no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
+  .email span{
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    margin-top: 26px;
+    background: url("graphics/aa-mail-icon.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
 
 /*footer*/
 

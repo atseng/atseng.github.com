@@ -102,13 +102,14 @@ nav a{
 
 .content {
   background-image: url('graphics/artactportrait-centered.jpg');
+  background-position: center center;
   background-size: cover;
   overflow: hidden;
-  height: 725px;
+  height: 800px;
   padding: 0px;
   margin-right: auto;
   margin-left: auto;
-}
+  }
 
 .center{
   position: relative;
@@ -169,6 +170,7 @@ nav a{
 }
 
 .night{
+  overflow: hidden;
   width: 100%;
   height: 750px;
   margin-right: auto;
@@ -177,7 +179,8 @@ nav a{
 }
 
 .quote {
-  margin-top: -315px;
+  top: 40%;
+  margin-top: -375px;
   margin-left: -640px;
   overflow: hidden;
 }
@@ -276,7 +279,7 @@ p{
 .ads{
   clear:both;
   width:100%;
-  height: 840px;
+  height: 1050px;
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
@@ -470,6 +473,200 @@ footer{
   	font-size:.75em;
   	text-transform:uppercase;
   }
+
+/*@media screen and (max-width: 355px){
+  .content{
+    height: 155px;
+  }
+  .night{
+    height: 155px;
+  }
+  .canvas{
+    height: 155px;
+  }
+  .ads{
+    height: 155px;
+  }
+  .authors{
+    height: 155px;
+  }
+}
+
+
+@media screen and (max-width: 760px){
+  .content{
+    height: 380px;
+    overflow: hidden;
+  }
+  .night{
+    height: 380px;
+  }
+  .canvas{
+    height: 380px;
+  }
+  .ads{
+    height: 380px;
+  }
+  .authors{
+    height: 380px;
+  }
+}
+
+
+@media screen and (max-width: 980px){
+  .content{
+    height: 540px;
+  }
+  .night{
+    height: 540px;
+  }
+  .canvas{
+    height: 540px;
+  }
+  .ads{
+    height: 540px;
+  }
+  .authors{
+    height: 540px;
+  }
+}*/
+
+
+@media screen and (max-width: 1150px){
+  .content{
+    height: 952px;
+  }
+  .night{
+    height: 952px;
+  }
+  .canvas{
+    height: 952px;
+  }
+  .main{
+    width: 80%;
+  }
+  .opener{
+    text-align: left;
+  }
+  .article{
+    text-align: left;
+  }
+  .ads{
+    height: 952px;
+  }
+  .authors{
+    height: 952px;
+  }
+  .bio-wrap{
+    width: 58%;
+    margin-top: 75px;
+  }
+  .allen{
+    margin-top: 10%;
+  }
+  .email{
+    margin-right: 0px;
+  }
+  .email span {
+    margin-top: 340px;
+  }
+  .biography p {
+    padding: 2px 7px 10px 15px;
+    width: 92%;
+  }
+}
+
+@media screen and (min-width: 1320px){
+  .content{
+    height: 1000px;
+    overflow: visible;
+  }
+  .night{
+    height: 1600px;
+    overflow: visible;
+  }
+  .canvas{
+    height: 1000px;
+    overflow: visible;
+  }
+  .ads{
+    height: 1200px;
+    overflow: visible;
+  }
+  .authors{
+    height: 1000px;
+    overflow: visible;
+  }
+  .bio {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 1860px){
+  .content{
+    height: 1200px;
+    overflow: visible;
+  }
+  .night{
+    height: 1800px;
+    overflow: visible;
+  }
+  .canvas{
+    height: 1200px;
+    overflow: visible;
+  }
+  .ads{
+    height: 1280px;
+    overflow: visible;
+  }
+  .authors{
+    height: 1200px;
+    overflow: visible;
+  }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
+  .content{
+    height: 768px;
+    background-position: center center;
+  }
+  .night{
+    height: 768px;
+    background-position: center center;
+  }
+  .canvas{
+    height: 768px;
+    background-position: center center;
+  }
+  .quote{
+    top:50%;
+  }
+  .promo{
+    display:none;
+  }
+  .eds{
+    display:none;
+  }
+  .main{
+    margin-top: 16.5%;
+    width: 64%;
+  }
+  .opener{
+    text-align: left;
+  }
+  .article{
+    text-align: left;
+  }
+  .ads{
+    height: 768px;
+    background-position: center center;
+  }
+  .authors{
+    height: 768px;
+    background-position: center center;
+  }
+}
 
 @media screen and (max-width: 900px) {
     .grid li {

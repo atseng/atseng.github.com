@@ -78,12 +78,12 @@ nav{
 
 nav a{
   font-family:'PT Sans Narrow', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 13px;
   letter-spacing: 3px;
   text-decoration:none;
   text-transform: uppercase;
-  margin: 5px 16px 0;
+  margin: 5px 18px 0;
   color: black;
   -webkite-transition:all 0.5s ease;
 }
@@ -93,7 +93,7 @@ nav a{
   font-family: 'PT Sans Narrow', sans-serif;
   text-align: right;
   width: 100%;
-  padding: 18px 0;
+  padding: 12px 0;
   margin-top:-5px;
   margin-bottom:0px;
   background:white;
@@ -102,16 +102,152 @@ nav a{
 
 .content {
   background-image: url('graphics/artactportrait-centered.jpg');
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
+  background-position-x: 50%;
+  background-position-y: 100%; 
+  background-repeat: no-repeat;
   height: 800px;
   padding: 0px;
   margin-right: auto;
   margin-left: auto;
   }
 
-.center{
+  /* Bruce Wyane */
+
+.batmobile {
+ /* background-image: url('graphics/mobile-about.jpg');*/
+  /*background-position: 50% 48%;*/
+/*  background-image: url('graphics/snow.gif');*/
+  /*background-image: url('graphics/sacred-geo-bg.jpg');*/
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  overflow: auto;
+  display: none;
+}
+
+.mobile-wrap {
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.mobile-header {
+  background-image: url('graphics/logo-mobile.png');
+  background-color: #fff;
+  background-position: 48% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 525px;
+  width: 100%;
+  height: 220px;
+}
+
+.mobile-statement {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  top: 4em;
+  font-size: 16px;
+  padding-left: 1em;
+  line-height: 24px;
+}
+
+.mobile-cover {
+  background-image: url('graphics/mobile-about.jpg');
+  background-position: 50% 48%;
+  background-size: cover;
+  min-height: 400px;
+  width: auto;
+}
+
+.mobile-logo {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  background-image: url('graphics/logo-mobile.png');
+  background-position: 48% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 525px;
+  width: 100%;
+  height: 220px;
+}
+
+.mobile-about {
+  width: 100%;
+  min-height: 220px;
+  position: relative;
+  padding: 20 10px;
+  /*background-image: url('graphics/mobile-about.jpg');*/
+  background-image: url('graphics/snow.gif');
+  background-position: 50% 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: width 1s, height 1s, margin 1s;
+  -moz-transition: width 1s, height 1s, margin 1s;
+  -ms-transition: width 1s, height 1s, margin 1s;
+  transition: width 1s, height 1s, margin 1s;
+}
+
+.mobile-preview {
+  width: 100%;
+  min-height: 220px;
+  background-image: url('graphics/mobile-about.jpg');
+  background-position: 50% 52%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.mobile-showcase {
+  width: 100%;
+  min-height: 228px;
+  position: relative;
+  background-image: url('graphics/fall-preview.jpg');
+  background-size: cover;
+  background-position: 50% 64%;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 1s, height 1s, margin 1s;
+  -moz-transition: width 1s, height 1s, margin 1s;
+  -ms-transition: width 1s, height 1s, margin 1s;
+  transition: width 1s, height 1s, margin 1s;
+}
+
+.mobile-installation {
+  position: relative;
+  width: 230px;
+  height: 48px;
+  margin-top: -30px;
+  margin-left: -113px;
+  z-index: 3;
+}
+
+.mobile-installation a {
+  text-decoration: none;
+}
+
+.mobile-footer {
+  width: auto;
+  min-height: 15px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 7px;
+  font-color: #C2C2C2;
+}
+
+.mobile {
+  padding: 0;
+}
+
+/* Exit Stealth Mode */
+
+.center {
   position: relative;
   top: 50%;
   left: 50%;
@@ -122,21 +258,20 @@ nav a{
 	display: block;
 	margin-left: auto;
   margin-right: auto;
-	margin-top: 4.5%;
+	margin-top: 3%;
 	background-image: url('graphics/logo.png');
 	background-repeat: no-repeat;
   background-size: cover;
-	max-width:445px;
-	height:240px;
+	max-width: 525px;
+	height: 220px;
 }
 
-.artact{
+.artact {
   position: relative;
-  padding: 1.5em;
-  left: 2px;
-  bottom: 85px;
+  padding: 2.5em;
   width: 255px;
   height: 60px;
+  bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   z-index: 5;
@@ -145,8 +280,10 @@ nav a{
 .artact h2{
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
+  padding-left: 7px;
+  font-size: 15px; 
+  line-height: 1.5em;
   letter-spacing: .5px;
-  font-weight: 220;
 }
 
 .keyboard{
@@ -159,6 +296,7 @@ nav a{
   top: 80%;
   overflow: hidden;
   z-index:4;
+  display: none;
 }
 
 
@@ -172,17 +310,23 @@ nav a{
 .night{
   overflow: hidden;
   width: 100%;
-  height: 750px;
+  height: 805px;
   margin-right: auto;
   margin-left: auto;
-  background-color: black;
+  background-color: #100000;
 }
 
 .quote {
-  top: 40%;
-  margin-top: -375px;
-  margin-left: -640px;
   overflow: hidden;
+}
+
+.vector-quote {
+  margin-top: 16%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 420px;
 }
 
 p{
@@ -194,7 +338,7 @@ p{
 
 .canvas{
   overflow: hidden;
-  height: 1050px;
+  height: 980px;
   width: 100%;
   padding: 0px;
   background-image: url('graphics/canvas.jpg');
@@ -202,7 +346,7 @@ p{
 
 .eds{
   position: relative;
-  height: 490px;
+  height: 430px;
   width: 420px;
   margin-right: auto;
   margin-left: auto;
@@ -210,37 +354,43 @@ p{
 
 .promo{
   position: relative;
-  margin-top: 55px;
+  margin-top: 50px;
+  max-height: 350px;
 }
+  img {
+    width: auto;
+    max-height: 375px;
+  }
 
   .promo li{
-  	width:400px;
-  	height:450px;
+  	width: auto;
+  	height: 375px;
   }
 
   .promo li {
-    float:left;
-    position:relative;
-    display:inline-block;
-    margin:10px;
-    padding:10px;
-    background:#fff;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    background: #fff;
     box-shadow:0 0 5px rgba(0,0,0,.35);
   }
 
 
 /*spanpopup*/
 .promo li div {
-  position:absolute;
-  height:0;
-  width:380px;
+  position: absolute;
+  height: 0;
+  width: 312px;
   background:rgba(0,0,0,.45);
-  overflow:hidden;
-  text-align:center;
-  bottom:10px;
+  overflow: hidden;
+  text-align: center;
+  bottom: 10px;
   padding: 0 10px;
-  line-height:40px;
-  color:#fff;
+  line-height: 40px;
+  color: #fff;
   transition:height 1s;
 }
 
@@ -250,8 +400,8 @@ p{
 
 .main{
   position: relative;
-  width: 960px;
-  margin-top: 2em;
+  width: 90%;
+  margin-top: 3.5em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -259,21 +409,10 @@ p{
 .article{
   position: relative;
   margin-top: 1em;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 100%;
+  font-family: "Palatino", sans-serif;
+  font-size: 1.1205;
   text-align: justify;
-  line-height: 1.5em;
-  font-weight: 150;
-}
-
-.opener{
-  position: relative;
-  margin-top: 3em;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 100%;
-  text-align: justify;
-  line-height: 1.5em;
-  font-weight: 200;
+  line-height: 1.3125em;
 }
 
 .ads{
@@ -290,7 +429,7 @@ p{
 .sf-header{
   width: 688px;
   height: 160px;
-  margin-top: -100px;
+  margin-top: -94px;
   margin-left: -344px;
   background: url("graphics/salvaged_future_header_shadow.png") no-repeat;
   z-index: 3;
@@ -370,18 +509,22 @@ p{
 
 .bio-wrap{
   position: relative;
-  width: 960px;
+  width: 50%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 98px;
 }
 
+.bio {
+  width: 100%;
+}
+
 .biography{
   width: 335px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 225px;
+  margin-top: 25px;
   border-top: thin double rgb(224, 224, 224);
 }
 
@@ -407,10 +550,11 @@ p{
 }
 
   .dylan span{
-    position: absolute;
     height: 200px;
     width: 200px;
-    left: 122.5px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     background: url("graphics/lazerow.png") no-repeat;
     background-size: cover;
   }
@@ -422,10 +566,11 @@ p{
 }
 
   .allen span{
-    position: absolute;
     height: 200px;
     width: 200px;
-    right: 122.5px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     background: url("graphics/tseng.png") no-repeat;
     background-size: cover;
   }
@@ -441,7 +586,7 @@ p{
     position: absolute;
     width: 113px;
     height: 113px;
-    margin-top: 26px;
+    margin-top: 55px;
     background: url("graphics/aa-mail-icon.png") no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -450,221 +595,239 @@ p{
 /*footer*/
 
 footer{
-	position:absolute;
-	width:100%;
-	height:140px;
-	bottom:0;
+	position: absolute;
+	width: 100%;
+	height: 140px;
+	bottom: 0;
 	background: transparent url("graphics/footerRC.jpg") no-repeat;
 	background-size: cover;
 }
 
 .copy-right {
-	margin-left:47%;
-	margin-top:3.5%;
-	width:70px;
-	height:15px;
-	padding:5px 5px;
+	margin-left: 46.5%;
+	margin-top: 95px;
+	width: 70px;
+	height: 15px;
+	padding: 5px 5px;
 }
 
   .copy-right h2 {
   	color:white;
   	font-family:'PT Sans Narrow', sans-serif;
   	font-weight: bold;
-  	font-size:.75em;
-  	text-transform:uppercase;
+  	font-size: 1em;
+    text-align: center;
+  	text-transform: uppercase;
   }
 
-/*@media screen and (max-width: 355px){
-  .content{
-    height: 155px;
+
+@media screen and (max-width: 700px){
+  body {
+    height: 100% !important;
   }
-  .night{
-    height: 155px;
+  .top_wrapper {
+    min-height: none;
+    padding-bottom: 0;
   }
-  .canvas{
-    height: 155px;
+  .artact {
+    padding: 25px;
+    bottom: 70px;
   }
-  .ads{
-    height: 155px;
+   .installation {
+    top: 140px !important;
+    width: 300px;
+    margin-left: -150px;
   }
-  .authors{
-    height: 155px;
+
+  .installation h2 {
+    font-size: 11px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 475px){
+   .artact {
+    padding: 25px;
+    bottom: 88px;
+  }
+}  
+
+@media screen and (max-width: 768px){
+  .authors{ 
+    height: 980px;
+  }
+  .bio{
+    margin-top: 4%;
+    width: 100%;
   }
 }
 
 
-@media screen and (max-width: 760px){
-  .content{
-    height: 380px;
-    overflow: hidden;
+@media screen and (max-width: 1280px) {
+  .email {
+    display: none;
   }
-  .night{
-    height: 380px;
-  }
-  .canvas{
-    height: 380px;
-  }
-  .ads{
-    height: 380px;
-  }
-  .authors{
-    height: 380px;
+  .bio-wrap{
+    width: 80%;
+    margin-top: 90px;
   }
 }
 
 
-@media screen and (max-width: 980px){
-  .content{
-    height: 540px;
-  }
+@media screen and (min-width: 1280px) and (max-width: 1460px){
   .night{
-    height: 540px;
-  }
-  .canvas{
-    height: 540px;
-  }
-  .ads{
-    height: 540px;
-  }
-  .authors{
-    height: 540px;
-  }
-}*/
-
-
-@media screen and (max-width: 1150px){
-  .content{
-    height: 952px;
-  }
-  .night{
-    height: 952px;
-  }
-  .canvas{
-    height: 952px;
+    height: 900px;
   }
   .main{
     width: 80%;
   }
-  .opener{
-    text-align: left;
-  }
   .article{
     text-align: left;
+    max-width: 690px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .ads{
-    height: 952px;
+    height: 950px;
   }
   .authors{
-    height: 952px;
+    height: 900px;
   }
   .bio-wrap{
-    width: 58%;
-    margin-top: 75px;
+    width: 70%;
+    margin-top: 70px;
   }
-  .allen{
-    margin-top: 10%;
+  .bio{
+    margin-top: 12%;
+    width: 50%;
   }
-  .email{
-    margin-right: 0px;
+
+  .email {
+    margin-top: 140px;
   }
-  .email span {
-    margin-top: 340px;
-  }
+
   .biography p {
     padding: 2px 7px 10px 15px;
-    width: 92%;
+    width: 90%;
   }
 }
 
-@media screen and (min-width: 1320px){
-  .content{
-    height: 1000px;
-    overflow: visible;
+@media screen and (min-width: 1441px){
+  .content {
+    height: 1020px;
+    background-size: cover;
+    background-position-y: 85%; 
   }
-  .night{
-    height: 1600px;
-    overflow: visible;
+  .my-logo {
+    margin-top: 6%;
   }
-  .canvas{
-    height: 1000px;
-    overflow: visible;
+  .night {
+    height: 1250px;
   }
-  .ads{
+  .vector-quote{
+    max-height: 580px;
+    margin-top: 20%;
+  }
+  .canvas {
     height: 1200px;
+  }
+  .promo {
+    margin-top: 70px;
+  }
+  .ads {
+    height: 1250px;
     overflow: visible;
   }
-  .authors{
-    height: 1000px;
-    overflow: visible;
+  .authors {
+    height: 1200px;
   }
-  .bio {
+  .bio-wrap {
+    margin-top: 400px;
+  }
+}
+
+/*Tablet Portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation : portrait){
+  .content {
+    height: 960px;
+    background-image: none;
+  }
+  .my-logo {
     margin-top: 30%;
   }
-}
+  .night {
+    height: 960px;
+  }
+  .vector-quote {
+    max-height: 220px;
+    margin-top: 50%;
+  }
+  .canvas {
+    height: 1060px;
+  }
+  .main {
+    width: 90%;
+  }
+  .authors {
+    height: 980px;
+  }
+  .bio {
+    width: 100%;
 
-@media screen and (min-width: 1860px){
-  .content{
-    height: 1200px;
-    overflow: visible;
+    span {
+      left: 95px;
+    }
   }
-  .night{
-    height: 1800px;
-    overflow: visible;
-  }
-  .canvas{
-    height: 1200px;
-    overflow: visible;
-  }
-  .ads{
-    height: 1280px;
-    overflow: visible;
-  }
-  .authors{
-    height: 1200px;
-    overflow: visible;
+  .bio-wrap {
+    width: 65%;
   }
 }
 
 /*Tablet Landscape*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation : landscape) {
   .content{
-    height: 768px;
-    background-position: center center;
+    height: 805px;
   }
   .night{
-    height: 768px;
-    background-position: center center;
+    height: 805px;
+  }
+  .vector-quote {
+    max-height: 300px;
+    margin-top: 24%;
   }
   .canvas{
-    height: 768px;
-    background-position: center center;
+    height: 805px;
   }
   .quote{
-    top:50%;
-  }
-  .promo{
-    display:none;
+    top: 50%;
   }
   .eds{
-    display:none;
+    display: none;
   }
   .main{
     margin-top: 16.5%;
     width: 64%;
   }
-  .opener{
-    text-align: left;
-  }
   .article{
     text-align: left;
   }
   .ads{
-    height: 768px;
+    height: 805px;
     background-position: center center;
   }
   .authors{
-    height: 768px;
+    height: 805px;
     background-position: center center;
+  }
+
+  .bio-wrap{
+    width: 85%;
+  }
+
+  .bio {
+    margin-top: 115px;
+    width: 45%;
   }
 }
 
@@ -678,6 +841,15 @@ footer{
     .grid li {
         width: 100%;
     }
+}
+
+
+@media screen and (max-width: 320px){
+  nav a{
+    font-size: .5em;
+    margin-left: 5px;
+    margin-right: 25px;
+  }
 }
 
 

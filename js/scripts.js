@@ -21,6 +21,16 @@ $(document).ready(function(){
         delay: 1760, duration: 800, property:'top', start:-350, end:460
     });
 
+
+    var batsignal = window.matchMedia('all and (max-width: 700px)');
+
+    if (batsignal.matches) {
+        $('.curtains').css('display', 'none');
+        $('nav').css('display', 'none');
+        $('footer').css('display', 'none');
+        $('.batmobile').css('display', 'block');
+    }
+
 });
 
 

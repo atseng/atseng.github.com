@@ -681,11 +681,21 @@ footer{
   .main{
     width: 80%;
   }
+
+  .col-left {
+    width: 50%;
+    float: left;
+  }
+
+  .col-right {
+    width: 50%;
+    float: left;
+  }
+
   .article{
     text-align: left;
-    max-width: 690px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 485px;
+    margin: 16px auto;
   }
   .ads{
     height: 950px;
@@ -731,6 +741,10 @@ footer{
   .canvas {
     height: 1200px;
   }
+  .article {
+    max-width: 625px;
+    margin: 24px auto;
+  } 
   .promo {
     margin-top: 70px;
   }
@@ -811,6 +825,8 @@ footer{
   }
   .article{
     text-align: left;
+    max-width: 485px;
+    margin: 16px auto;
   }
   .ads{
     height: 805px;
